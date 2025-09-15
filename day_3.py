@@ -57,15 +57,30 @@
 # print(length("Pythn"))
 
 
-import datetime
+# import datetime
 
-now=datetime.datetime.now()
-print(now)
+# now=datetime.datetime.now()
+# print(now)
 
-year=lambda x:x.year
-date=lambda x:x.date()
-t=lambda x:x.time()
+# year=lambda x:x.year
+# date=lambda x:x.date()
+# t=lambda x:x.time()
 
-print(year(now))
-print(date(now))
-print(t(now))
+# print(year(now))
+# print(date(now))
+# print(t(now))
+
+
+# import array
+
+# n=array.array("i",[1,2,3,4])
+# print(n)
+
+x=["a","e","i","o","u","A",'E','I','O','U']
+n=input("Enter a string")
+c={}
+for char in n:
+    if char in x:
+        c[char]=c.get(char,0)+1
+print(c)
+        
